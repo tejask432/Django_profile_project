@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class="container mt-5">
+	<h1 class="text-warning mb-5 border-bottom">CONTACT US</h1>
+	<div class="row text-white mb-5">
+		<p class="mx-auto mb-5 ss-color">
+			Do you have any questions? Please do not hesitate to contact. I will come back to you within a matter of hours to help you.
+		</p>
+		
+		<div class="col-sm-9  mb-5">
+			<form action="MAILTO:dpt13054@gmail.com" method="post" enctype="text">
+				<div class="form-row">
+					<div class="form-group col md-6">
+						<label for="inputName">Your Name</label>
+						<input type="text"class="form-control" id="inputName"/>
+					</div> 
+				
+					<div class="form-group col md-6">
+						<label for="inputEmail">Your Email *</label>
+						<input type="Email"class="form-control" id="inputEmail" required="True"/>
+					</div>
+				</div>
+					<div class="form-group">
+						<label for="inputSubject">Your Subject</label>
+						<input type="text"class="form-control" id="inputSubject"/>
+					</div>
+					<div class="form-group">
+						<label for="inputTextarea">Your Message *</label>
+						<textarea class="form-control" id="inputTextarea" required="True"></textarea>
+					</div>
+					<button class="btn btn-primary" type="submit">Send</button>
+					<input class="btn btn-primary ml-3" type="Reset"/>
+			</form>
+		</div>
+
+		<div class="col-sm-3 text-center">
+			<ul class="list-unstyled">
+				<li>
+					<i class="fas fa-map-marker-alt fa-2x i-color"></i>
+					<p class="ss-color">Hulikunte, D.B.pura, Bangalore rural</p>
+				</li>
+				<li>
+					<i class="fas fa-phone mt-4 fa-2x i-color"></i>
+					<p class="ss-color">+91 7892977254</p>
+				</li>
+				<li>
+					<i class="fas fa-envelope mt-4 fa-2x i-color"></i>
+					<p class="ss-color">dpt13054@gmail.com</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="text-center">
+	<a href="https://rb.gy/clwdys"><i class="fab fa-twitter i-color mr-3"></i></a>
+	<a href="https://rb.gy/9n4cyc" ><i class="fab fa-facebook i-color mr-3"></i></a>
+	<a href="https://rb.gy/r1rcw8" ><i class="fab fa-instagram i-color mr-3"></i></a>
+	<a href="https://rb.gy/vwcfdk" ><i class="fab fa-linkedin i-color mr-3"></i></a>
+</div>
+{% endblock content %}

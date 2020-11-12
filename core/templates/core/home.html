@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div>
+	<div class="mt-5">
+		<div class="text-center">
+		<img src="{% static "core/images/pic.jpg" %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+		</div>
+	<div class="mt-5 text-white mx-3 text-justify">
+	<h1 class="mt-5 font-weight-bold st-font">Hello,</h1>
+	<div class="px-4" style="line-height:1.8rem">
+		<p style="text-indent:100px">
+			I am <b class="text-warning">Tejaskumar D P</b>, i have completed BE in 2019 with specialization of Computer Science and Engineering with an aggregate of 6.6 CGPA. I also have a good knowledge of Python3,Core Java, Data structures, HTML5,CSS and SQL.
+		</p>
+		<p style="text-indent:100px">
+		I did 4 months of certification course on<b class="text-warning"> python and java </b>in ABC institute for Technology training. Also i did a 1 months internship on 'Mobile application development' in Ethnotech academic solutions.
+		<p style="text-indent:100px"> Some of my personal qualities which you may find useful for this role are Good team worker, Adaptable to any kind of environment and can work under pressure, Good analytical and communication skills.</p>
+		</p>
+</div>
+</div>
+<div class="text-center">
+	<a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+</div>
+</div>
+</div>
+{% endblock content %}
